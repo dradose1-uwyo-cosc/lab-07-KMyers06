@@ -18,13 +18,14 @@
 # You will continue to prompt the user until a proper integer value is entered
 
 factorial = 1
+bound=""
 
-While True:
+while True:
     bound=input('Your positive number input= ')
-        if bound.isdigit():
-            break
-        elif:
-            print("Please Reinput Number")
+    if bound.isdigit():
+        break
+    else:
+        print("Please Reinput Number")
 bound=int(bound)
 
 list=[]
@@ -32,10 +33,10 @@ while factorial <= bound:
     list.append(factorial)
     factorial += 1 
 total=1
-for li in list:
-    total=total*li
+for x in list:
+    total=total*x
 
-print(f"The result of the factorial based on the given bound is {factorial}")
+print(f"The result of the factorial based on the given bound is {total}")
 
 print("*"*75)
 # Create a while loop that prompts a user for input of an integer values
@@ -87,8 +88,37 @@ print("*"*75)
 # Print the result of the equation
 # Again, loop through prompting the user for input until `exit` in any casing is input 
 
+numbers=[]
+total=0
+operators=['+','-','/','*','%']
 
-while True:
-    number=input("Operation and Number= ")
-    checking=number.removeprefix
-    if 
+while True: 
+    number=input("Input Operator and 2 Positive Integers= ")
+    if number.upper()== "EXIT":
+        break
+    else:
+        for o in operators:
+            if o in number:
+                ope=o
+        number=number.replace(" ","")
+        numbers=number.split(ope)
+        number1=int(numbers[0])
+        number2=int(numbers[1])
+        operator=numbers[1]
+        if ope == "+":
+            total= number1 + number2
+            print(total)
+        elif ope == "-":
+            total= number1 - number2
+            print(total)
+        elif ope == "/":
+            total= number1 / number2
+            print(total)
+        elif ope == "*":
+            total= number1 * number2
+            print(total)
+        elif ope == "%":
+            total= number1 % number2
+            print(total)
+        else:
+            print('Error: Please Restart code')
