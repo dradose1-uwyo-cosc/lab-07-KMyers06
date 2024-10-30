@@ -120,5 +120,3 @@ while True:
         elif ope == "%":
             total= number1 % number2
             print(total)
-        else:
-            print('Error: Please Restart code')
