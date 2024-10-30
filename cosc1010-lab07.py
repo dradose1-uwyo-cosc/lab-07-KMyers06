@@ -1,9 +1,9 @@
-# Your Name Here
+# Koen Myers
 # UWYO COSC 1010
 # Submission Date
-# Lab XX
-# Lab Section: 
-# Sources, people worked with, help given to: 
+# Lab 07
+# Lab Section: 15
+# Sources, people worked with, help given to: Max Monroe
 # your
 # comments
 # here
@@ -18,6 +18,22 @@
 # You will continue to prompt the user until a proper integer value is entered
 
 factorial = 1
+
+While True:
+    bound=input('Your positive number input= ')
+        if bound.isdigit():
+            break
+        elif:
+            print("Please Reinput Number")
+bound=int(bound)
+
+list=[]
+while factorial <= bound:
+    list.append(factorial)
+    factorial += 1 
+total=1
+for li in list:
+    total=total*li
 
 print(f"The result of the factorial based on the given bound is {factorial}")
 
@@ -38,7 +54,19 @@ print("*"*75)
 # The sum should start at 0 
 
 num_sum = 0 
+integer=""
 
+while True:
+    integer=input("type number or Exit= ")
+    check= integer.removeprefix("-")
+    if check.isdigit():
+        integer=int(integer)
+        num_sum+=integer
+    elif integer.upper()== "EXIT":
+        break
+    else:
+        print("Please reinput value")
+    
 print(f"Your final sum is {num_sum}")
 
 print("*"*75)
@@ -59,4 +87,8 @@ print("*"*75)
 # Print the result of the equation
 # Again, loop through prompting the user for input until `exit` in any casing is input 
 
-        
+
+while True:
+    number=input("Operation and Number= ")
+    checking=number.removeprefix
+    if 
